@@ -3,8 +3,8 @@ package ru.netology.domane.Con;
 public class Conditioner {
 
     private String name;
-    private int maxTemperature;
-    private int minTemperature;
+    private int maxTemperature = 26;
+    private int minTemperature = 15;
     private int currentTemperature;
     private boolean on;
 
@@ -64,7 +64,6 @@ public class Conditioner {
         }
         this.currentTemperature--;
     }
-
 
     public boolean isOn() {
         return on;
